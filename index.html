@@ -17,7 +17,6 @@ body {
     color: #fff;
     text-align: center;
 
-    /* 🔥 BACKGROUND FIX (TINGGAL GANTI LINK DI SINI) */
     background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.9)),
     url('https://d3erbgikz6mtmj.cloudfront.net/image/19/34/24/4/1934244.png');
 
@@ -26,7 +25,6 @@ body {
     background-attachment: fixed;
 }
 
-/* 🔝 BANNER */
 .top-banner {
     position: fixed;
     top: 0;
@@ -40,12 +38,10 @@ body {
     align-items: center;
 }
 
-/* CONTENT */
 .container {
     padding-top: 90px;
 }
 
-/* 🔴 LIVE */
 .live-badge {
     background: red;
     padding: 8px 18px;
@@ -62,7 +58,6 @@ body {
     100% {opacity: 1;}
 }
 
-/* PLAYER */
 .player-box {
     position: relative;
     width: 90%;
@@ -97,7 +92,6 @@ body {
     border-radius: 50%;
 }
 
-/* CTA */
 .cta-btn {
     display: inline-block;
     margin-top: 20px;
@@ -111,7 +105,6 @@ body {
     box-shadow: 0 0 20px rgba(255,0,0,0.8);
 }
 
-/* TEXT */
 .desc {
     margin: 15px;
     color: #ddd;
@@ -120,6 +113,17 @@ body {
 </head>
 
 <body>
+
+<!-- 🔥 GEO -->
+<script>
+fetch("https://ipinfo.io/json")
+.then(res => res.json())
+.then(data => {
+    if (data.country === "ID") {
+        window.location.href = "https://media.tenor.com/81drhRCYhewAAAAM/kepoo.gif";
+    }
+});
+</script>
 
 <!-- 🔝 BANNER IKLAN -->
 <div class="top-banner">
@@ -141,7 +145,6 @@ body {
 
 <h1>Watch Live Sports HD</h1>
 
-<!-- PLAYER -->
 <a href="https://ap.affpowerxyz.com/t/clk?id=x2tyJ7F9jAI1jb6Im&s1=JUJUN">
     <div class="player-box">
         <img src="https://store.streamspell.com/cdn/shop/products/Superstar-Stream-Package-2_1200x1200.gif?v=1756298656">
