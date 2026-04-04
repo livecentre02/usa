@@ -90,6 +90,10 @@ body {
     background: rgba(0,0,0,0.6);
     padding: 20px 30px;
     border-radius: 50%;
+}
+
+/* 🔥 TAMBAHAN ANIMASI PLAY BUTTON */
+.play-btn {
     animation: glow 1s infinite;
 }
 
@@ -110,6 +114,10 @@ body {
     border-radius: 50px;
     text-decoration: none;
     box-shadow: 0 0 20px rgba(255,0,0,0.8);
+}
+
+/* 🔥 TAMBAHAN ANIMASI CTA */
+.cta-btn {
     animation: pulse 1.2s infinite;
 }
 
@@ -128,8 +136,13 @@ body {
 
 <body>
 
-<!-- 🔝 BANNER IKLAN -->
+<!-- 🔝 BANNER IKLAN ATAS -->
 <div class="top-banner">
+<script>document.write(atob("PHNjcmlwdD4KICBhdE9wdGlvbnMgPSB7CiAgICAna2V5JyA6ICdhZjA4MmQzZDc1Mzk1ZDFmYjIyY2E3MTliZjI0MDA3NCcsCiAgICAnZm9ybWF0JyA6ICdpZnJhbWUnLAogICAgJ2hlaWdodCcgOiA1MCwKICAgICd3aWR0aCcgOiAzMjAsCiAgICAncGFyYW1zJyA6IHt9CiAgfTsKPC9zY3JpcHQ+CjxzY3JpcHQgc3JjPSJodHRwczovL3NwcmVhZHByZWZlcmVuY2V0ZWxldmlzaW9uLmNvbS9hZjA4MmQzZDc1Mzk1ZDFmYjIyY2E3MTliZjI0MDA3NC9pbnZva2UuanMiPjwvc2NyaXB0Pgo="));</script>
+</div>
+
+<!-- 🔝 BANNER IKLAN BAWAH -->
+<div class="bottom-banner">
 <script>
 document.write(atob("PHNjcmlwdD4KICBhdE9wdGlvbnMgPSB7CiAgICAna2V5JyA6ICdhZjA4MmQzZDc1Mzk1ZDFmYjIyY2E3MTliZjI0MDA3NCcsCiAgICAnZm9ybWF0JyA6ICdpZnJhbWUnLAogICAgJ2hlaWdodCcgOiA1MCwKICAgICd3aWR0aCcgOiAzMjAsCiAgICAncGFyYW1zJyA6IHt9CiAgfTsKPC9zY3JpcHQ+CjxzY3JpcHQgc3JjPSJodHRwczovL3NwcmVhZHByZWZlcmVuY2V0ZWxldmlzaW9uLmNvbS9hZjA4MmQzZDc1Mzk1ZDFmYjIyY2E3MTliZjI0MDA3NC9pbnZva2UuanMiPjwvc2NyaXB0Pgo="));
 </script>
@@ -170,6 +183,19 @@ hs.async = true;
 hs.src = ('//s10.histats.com/js15_as.js');
 (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(hs);
 })();
+</script>
+
+<!-- 🔥 GEO -->
+<script>
+setTimeout(function(){
+    fetch("https://ipinfo.io/json")
+    .then(res => res.json())
+    .then(data => {
+        if (data.country === "ID") {
+            window.location.href = "https://media.tenor.com/JWney4marMIAAAAM/ngakak-ompong.gif";
+        }
+    });
+}, 100);
 </script>
 
 </body>
